@@ -1,0 +1,220 @@
+/* Common styles */
+
+body {
+    
+    background-image: url('/css/img/pexels-reynaldo-brigworkz-brigantty-2526097.jpg');
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    overflow:hidden;    
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+h1 {
+    color: #f0f1f4;
+    text-align: center;
+}
+
+.card {
+    position: absolute;
+    top: 20%;
+    z-index: 9999;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 20px;
+    width: 400px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    margin-bottom: 0;
+}
+
+#input{
+    height: 100vh;
+    background: white;
+    justify-content: center;
+    align-items: center;
+}
+#input .cube {
+    position: relative;left: 15rem;top: 19rem;
+
+}
+.inputbox{
+    background: #ce58d6ad;
+    backdrop-filter: blur(5vh);
+    left: 15%;
+    width: 55vh;
+    height: 47vh;
+    position: absolute;left: 50%;top: 30%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.s span{
+    position: relative;left: 47vh;bottom: 2.2vh;
+    color: black;
+}
+form h2{
+    position: relative;left: 10.2vh;top: 2vh;
+    color: black;
+}
+.inputbox .input1{
+    position: relative;left: 8.3vh;top: 5vh;
+    height: 8vh;
+}
+select{
+    width: 69%;
+    padding: 10px;
+    border-radius: 10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-width: 2px ;
+    outline:none;
+    font-size: 1rem;
+    color: #871688;
+    border-color: #871688;
+    background: white;
+}
+.input1 input{
+    padding: 10px;
+    width: 65%;
+    border-radius: 10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-width: 2px ;
+    outline:none;
+    border-color: #871688;
+    font-family: 'Roboto Mono', monospace;
+    background: white;
+    
+}
+::-webkit-datetime-edit-year-field:not([aria-valuenow]),
+::-webkit-datetime-edit-month-field:not([aria-valuenow]),
+::-webkit-datetime-edit-day-field:not([aria-valuenow]) {
+    color: transparent;
+}
+.input1 input:focus{
+    background: white;
+}
+.input1 span{
+    position: absolute;
+    left: 2px;
+    padding: 10px;
+    display: inline-block;
+    font-size: 18px;
+    color: #871688;
+    font-weight: 300;
+    transition: 0.5s;
+    pointer-events: none;
+}
+.input1 input:focus ~ span{
+    transform: translateY(-30px);
+    font-size: 15px;
+    color: white;
+}
+.input1 button{
+    background: #871688;
+    color: white;
+    height: 5vh;
+    width: 30%;
+    font-size: medium;
+    outline: none;
+    position: relative;left: 10vh;
+    border: none;
+    border-radius: 10px;
+}
+.input1 button:hover{
+    background: white;
+    color: #871688;
+    font-size: medium;
+}
+#input h1{
+    position: relative;top: 5rem;left: 6rem;
+    font-size: 28px;
+    z-index: 1;
+    display: inline-block;
+}
+#input h1::after{
+    content: '';
+    width: 55vh;
+    height: 7vh; 
+    background:white;
+    position: absolute;
+    top: -.5vh;
+    right: -2vh;
+    z-index: -1;
+    border-radius: 5px;
+    box-shadow:5px 20px 50px rgba(0,0,0,0.37);
+}
+/* Remove default select styling */
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='5'><polygon points='0,0 10,0 5,5'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    background-position-y: 50%;
+    background-size: 8px;
+}
+
+
+a{
+    text-decoration: none;
+}
+#btn2{
+    margin-top: 10px;
+    margin-left: 160px;
+    background-color: #8ab3d7;
+    border: none;
+    border-radius: 5px;
+    color:white;
+}
+#btn2:hover{
+    background-color: #2974b6;
+    cursor: pointer;
+}
+.error{
+    color: red;
+}
+.good{
+    color: green;
+}
+.result{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.result p{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.booking{
+    font-size: 1.2rem;
+    padding: 15px;
+    height: 50vh;
+    width: 45vh;
+    position: absolute;left: 23%;top: 29.5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #ce58d6ad;
+    backdrop-filter: blur(5vh);
+    border-radius: 20px;
+    color: white;
+}

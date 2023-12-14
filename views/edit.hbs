@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="jquery-1.10.2.min.js"></script>
+    <title>Bus Booking System</title>
+    <link rel="stylesheet" type="text/css" href="/css/home.css">
+    <script src="/css/index.js"></script>
+</head>
+<body>
+  
+    <h1>Edit Activity</h1>
+     <div class="result">
+            {{#if msg}}
+            <p class="{{msg_type}}">{{msg}}</p>
+            {{/if}}
+            </div>
+    
+    <div class="container">
+        {{#each result}}
+            <form class="inputbox" action="/adminpage/{{this.id}}" method="post">
+            <div class="input1">
+                <input type="text" id="inputField1" name="inputField1" title="Name of the student" required onclick="valid()" value="{{this.name}}">
+                <span id="message1">Student Name</span>
+            </div>
+            <div class="input1">
+                <input type="text" id="inputField2" name="inputField2" title="Class and section of the student" required onclick="valid()" value="{{this.class}}">
+                <span id="message2">Class-Section</span>
+            </div>
+            <div class="input1">
+                <select name="myselect" id="inputField3" name="inputField3" title="Parcipating activity of the student" required onclick="valid()">
+                    <option  disabled selected value>Choose Activity</option>
+                    <option value="Cycling">Cycling</option>
+                    <option value="Jocking">Jocking</option>
+                    <option value="Walking">Walking</option>
+                    <option value="Yoga">Yoga</option>
+                    <option value="Dance">Dance</option> 
+                    <option value="Swimming">Swimming</option>
+                </select>
+            </div>
+            <div class="input1">
+                <input type="text" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'"  id="inputField4" name="inputField4" title="Date of participation" placeholder="" required onclick="valid()" value="{{this.date}}">
+                <span id="message4">Date</span>
+            </div>
+            <div class="input1">
+                <button>Create</button>
+            </div>
+            </form>
+            {{/each}}
+    </div>
+    
+
+</body>
+</html>
